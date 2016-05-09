@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+option java_package = "com.dexterhorthy.retrobuf";
+option java_outer_classname = "Models";
+
+
+message Event {
+    optional uint64 id = 1;
+    optional string name = 2;
+}
+
+message Events {
+    repeated Event events = 1;
+}
+
